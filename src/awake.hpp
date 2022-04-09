@@ -1262,6 +1262,17 @@ enum {
 #define NUM_AMMOTYPES   8
 // Adding a new ammo type? Make sure it's in npc_ammo_usage_preferences[].
 
+/* Projectile types, for quivers */
+#define PROJECTILE_ARROW          0
+#define PROJECTILE_BOLT           1
+#define PROJECTILE_SHURIKEN       2
+#define PROJECTILE_THROWING_KNIFE 3
+
+#define FIREWEAPON_BOW            0
+#define FIREWEAPON_CROSSBOW       1
+#define FIREWEAPON_RANGER_X_BOW   2
+#define NUM_FIREWEAPON_TYPES      3
+
 /* material type for item */
 #define ITEM_NONE                  0
 #define ITEM_PLASTIC             1
@@ -2217,22 +2228,23 @@ enum {
 #define IDENT_LENGTH              8
 
 // New combat modifiers used in the rework of hit().
-#define COMBAT_MOD_RECOIL                0
-#define COMBAT_MOD_MOVEMENT              1
-#define COMBAT_MOD_DUAL_WIELDING         2
-#define COMBAT_MOD_SMARTLINK             3
-#define COMBAT_MOD_DISTANCE              4
-#define COMBAT_MOD_VISIBILITY            5
-#define COMBAT_MOD_POSITION              6
-#define COMBAT_MOD_GYRO                  7
-#define COMBAT_MOD_REACH                 8
-#define COMBAT_MOD_VEHICLE_DAMAGE        9
-#define COMBAT_MOD_DEFENDER_MOVING       10
-#define COMBAT_MOD_IN_MELEE_COMBAT       11
-#define COMBAT_MOD_OPPONENT_BURST_COUNT  12
-#define COMBAT_MOD_FOOTANCHORS           13
-#define COMBAT_MOD_VEHICLE_HANDLING      14
-#define NUM_COMBAT_MODIFIERS             15
+#define COMBAT_MOD_RECOIL                  0
+#define COMBAT_MOD_MOVEMENT                1
+#define COMBAT_MOD_DUAL_WIELDING           2
+#define COMBAT_MOD_SMARTLINK               3
+#define COMBAT_MOD_DISTANCE                4
+#define COMBAT_MOD_VISIBILITY              5
+#define COMBAT_MOD_POSITION                6
+#define COMBAT_MOD_GYRO                    7
+#define COMBAT_MOD_REACH                   8
+#define COMBAT_MOD_VEHICLE_DAMAGE          9
+#define COMBAT_MOD_DEFENDER_MOVING         10
+#define COMBAT_MOD_IN_MELEE_COMBAT         11
+#define COMBAT_MOD_OPPONENT_BURST_COUNT    12
+#define COMBAT_MOD_FOOTANCHORS             13
+#define COMBAT_MOD_VEHICLE_HANDLING        14
+#define COMBAT_MOD_FIREWEAPON_LOW_STRENGTH 15
+#define NUM_COMBAT_MODIFIERS               16
 // End new combat modifiers.
 
 #define JURISDICTION_SEATTLE   0
